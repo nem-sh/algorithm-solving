@@ -6,7 +6,7 @@ def get_time(line,str_times,end_times):
     str_times.append(second-float(T[:-1]))
     end_times.append(second)
 
-def searchMaxTraffic(str_times, end_times):
+def search_max_traffic(str_times, end_times):
 
     cur_count = 0
     max_count = 0
@@ -38,7 +38,7 @@ def solution(lines):
         get_time(line, str_times, end_times)
 
     str_times.sort()
-    answer = searchMaxTraffic(str_times,end_times)
+    answer = search_max_traffic(str_times,end_times)
 
     return answer
 
